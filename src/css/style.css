@@ -35,6 +35,7 @@ header{
   display: flex;
 color:#757575 ;
 text-decoration: none;
+font-size: clamp(6px, 2vw, 14px);
 }
 .navigation ul{
   display: flex;
@@ -82,6 +83,20 @@ text-decoration: none;
   align-items: center;
   gap: 15px;
 }
+@media(max-width:768px){
+  .navRight{
+    gap: 20px;
+  }
+  .btnSesion button{
+    width: 80px;
+    font-size: 10px;
+  }
+
+  .search button{
+    width: 18px;
+    height: 18px;
+  }
+}
 .banner img{
   max-width: 100%;
   height: auto;
@@ -117,7 +132,7 @@ text-decoration: none;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw , 14px);
   font-family: helvetica,arial,sans-serif;
 }
 .spacer{
@@ -134,24 +149,30 @@ main{
   margin: 0px 34.33333px;
   padding:28px 0px ;
   font-family: helvetica,arial,sans-serif;
-  font-size: 22px;
+  font-size: clamp(17, 2vw , 22px);
   color: #363636;
 }
 .bannerP{
   display: flex;
-  
+  padding: 20px;
   font-family: helvetica,arial,sans-serif;
   font-size: 12px;
   color: #6b6b6b;
   margin: 0px 34.33333px;
 
 }
+@media(max-width:768px){
+  .bannerInf button{
+    align-items: center;
+    justify-content: center;
+  }
+}
 .bannerInf button{
   width: 114.98px;
   height: 34px;
   background-color: #0070cc;
   padding: 0px 10px;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   font-family:  Helvetica,Arial, sans-serif;
   color: white;
   align-items: center;
@@ -194,7 +215,8 @@ main{
   top: 15px;
   right: 20px;
   border-radius: 50%;
-  font-size:15px ;
+  font-size: clamp(10px, 2vw, 14px);
+
   border: transparent;
   background-color: transparent;
   cursor: pointer;
@@ -202,7 +224,7 @@ main{
 }
 .title{
   max-width: 100%;
-  font-size: 22px;
+  font-size: clamp(16px, 2vw, 22px);
   font-family:  Helvetica,Arial, sans-serif;
   margin-bottom: 15px;
   margin-top: 5px;
@@ -210,14 +232,14 @@ main{
 .email{
   max-width: 100%;
   font-family:  Helvetica,Arial, sans-serif;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   margin-left:-100px;
   margin-bottom: 5px;
 }
 .loginRight input{
   max-width: 100%;
   font-family:  Helvetica,Arial, sans-serif;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   width: 380.22px;
   height: 36px;
   padding: 6px 6px 6px 10px;
@@ -228,7 +250,7 @@ main{
 .next{
   max-width: 100%;
   font-family:  Helvetica,Arial, sans-serif;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   color: #b8b9bc;
   background-color:#2f4a70 ;
   width: 380.22px;
@@ -240,7 +262,7 @@ main{
 .createAccount{
   max-width: 100%;
   font-family:  Helvetica,Arial, sans-serif;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   color: #0070cc;
   background-color:#0070cc08 ;
   width: 380px;
@@ -251,7 +273,7 @@ main{
 .loginRight a{
   max-width: 100%;
   font-family:  Helvetica,Arial, sans-serif;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   color: #0068bd;
   margin-bottom: 15px;
 }
@@ -415,7 +437,7 @@ main{
   background: none;
   color: #0068bd;
   border: none;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   font-family:  Helvetica,Arial, sans-serif; 
   cursor: pointer;
 }
@@ -443,10 +465,12 @@ main{
   cursor: pointer;
 }
 
-.subPre a{
+.subPre a,
+.subPre p{
   text-decoration: none;
   color: black ;
   font-family:Helvetica,Arial, sans-serif;
+  font-size: clamp(10px, 2vw, 14px);
 }
  
 .special{
@@ -481,20 +505,28 @@ main{
   width: 95%;
   margin: auto;
   color: #6b6b6b;
-  font-size: 12px;
+  font-size: clamp(8px, 2vw, 12px);
   font-family:Helvetica,Arial, sans-serif; 
   margin-top: 30px;
   padding: 20px;
 }
 .infoBanner2 button{
   padding: 0 10px;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   font-family:Helvetica,Arial, sans-serif; 
   background: #0070cc;
   border-radius: 20px;
   color: #ffff;
   border: none;
   cursor: pointer;
+  width: auto;
+}
+@media(max-width: 768px){
+  .infoBanner2 button{
+    padding: 0 5px;
+    width: auto;
+    font-size: 10px;
+  }
 }
 .more{
 
@@ -543,7 +575,7 @@ main{
   background: none;
   cursor: pointer;
   color: #0068bd;
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   font-family:Helvetica,Arial, sans-serif; 
 
 }
@@ -567,7 +599,7 @@ footer{
 }
 #country{
   color: white;
-  font-size: 16px;
+  font-size: clamp(12px, 2vw, 16px);
   font-family:Helvetica,Arial, sans-serif; 
   margin-left: 40px;
   text-decoration: none;
@@ -579,16 +611,15 @@ footer{
   margin: 0 auto 30px auto;
   display:flex;
   align-items: center;
- 
+  text-align: left;
   margin-top: 20px;
 }
 .list{
   width: 95%;
   margin: auto;
-  
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content:flex-start;
   gap: 90px;
 
 }
@@ -596,14 +627,29 @@ footer{
   color:white;
   text-decoration: none;
   font-family:Helvetica,Arial, sans-serif; 
-  margin-left: 13px;
-  font-size: 14px;
+  
+  font-size: clamp(10px, 2vw, 14px);
  
 }
 .list ul{
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media(max-width:768px){
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .list ul{
+    align-items: flex-start;
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
 }
 .list li{
   margin-bottom: 15px;
@@ -620,7 +666,35 @@ footer{
   color: #ffff;
   text-decoration: none;
   font-family:Helvetica,Arial, sans-serif; 
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   margin-top: 40px; 
   margin-bottom: 40px;
 }
+
+@media (max-width: 768px){
+  .navigation ul{
+    font-size:7px ;
+    gap: 5px;
+
+  }
+}
+
+@media (max-width:768px) {
+  .list{
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  }
+
+}
+@media (max-width: 768px){
+  .finalText a{
+    font-size: 10px;
+    margin: auto;
+    padding-right: 0 5px;
+  }
+}
+@media (max-width: 768px){
+  .finalText {
+    padding-bottom: 40px;
+  }}
